@@ -5,7 +5,7 @@ ul{
     list-style: none;
     padding: 0;
 }
-.sidenav img,.name_container img{
+.name_container img{
     width: 90px;
 }
 button{
@@ -34,4 +34,35 @@ button{
 .trending div,.name_container,.sidenav,.search,.btn{
     display: flex;
     align-items: center;
+}
+.search input{
+    background-color: rgb(167, 167, 167);
+    border: 0;
+    padding: 5px;
+    width: 90%;
+    height: 30%;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+.sidenav{
+    gap: 6%;
+    justify-content: center;
+    font-weight: 700;
+}
+.sidenav img{
+    width: 15%;
+}
+.name_container .name{
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.name_container .name,.name_container p{
+    margin: 0;
+}
+.name_container p{
+    font-size: 1.3rem;
+}
+.btn{
+    justify-content: center;
+    gap: 20px;
 }
