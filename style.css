@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 svg{
     width: 30px;
 }
@@ -25,9 +29,31 @@ button{
 }
 .container{
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1.3fr 5fr;
+}
+.dashboard{
+    background-color: aqua;
+    padding: 10%;
+}
+.dashboard .logo{
+    font-size: 2rem;
+    padding-bottom: 10%;
+}
+.menu,.list1,.list2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.menu>ul>li{
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    align-items: center;
+    font-size: 1.3rem;
 }
 .nav{
+    padding: 2%;
+    background-color: bisque;
     display: grid;
     grid-template-columns: 5fr 3fr;
 }
@@ -39,7 +65,7 @@ button{
     background-color: rgb(167, 167, 167);
     border: 0;
     padding: 5px;
-    width: 90%;
+    width: 100%;
     height: 30%;
     border-radius: 20px;
     font-size: 1rem;
@@ -55,9 +81,6 @@ button{
 .name_container .name{
     font-weight: 900;
     font-size: 1.5rem;
-}
-.name_container .name,.name_container p{
-    margin: 0;
 }
 .name_container p{
     font-size: 1.3rem;
