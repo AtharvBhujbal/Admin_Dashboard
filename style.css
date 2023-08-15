@@ -3,8 +3,9 @@ svg{
 }
 ul{
     list-style: none;
+    padding: 0;
 }
-.sidenav img,.name_display img{
+.sidenav img,.name_container img{
     width: 90px;
 }
 button{
@@ -19,8 +20,18 @@ button{
 }
 .trending div{
     font-size: 1.5em;
-    display: flex;
-    align-items: center;
     gap:20px;
     padding: 10px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+.nav{
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+}
+.trending div,.name_container,.sidenav,.search,.btn{
+    display: flex;
+    align-items: center;
 }
